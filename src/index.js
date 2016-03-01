@@ -15,6 +15,7 @@ var batch = require('./batch'),
 import PromiseRouter           from './PromiseRouter';
 import { GridStoreAdapter }    from './Adapters/Files/GridStoreAdapter';
 import { S3Adapter }           from './Adapters/Files/S3Adapter';
+import { AzureStorageAdapter } from './Adapters/Files/AzureStorageAdapter';
 import { FilesController }     from './Controllers/FilesController';
 
 import ParsePushAdapter        from './Adapters/Push/ParsePushAdapter';
@@ -257,5 +258,6 @@ function getClassName(parseClass) {
 
 module.exports = {
   ParseServer: ParseServer,
-  S3Adapter: S3Adapter
+  S3Adapter: S3Adapter,
+  AzureStorageAdapter: AzureStorageAdapter
 };
